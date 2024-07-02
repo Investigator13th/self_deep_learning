@@ -8,7 +8,7 @@ import torch.nn.functional as F  # 使用functional中的ReLu激活函数
 import torch.optim as optim
 
 # 超参数1(调整？)
-batch_size = 32
+batch_size = 32 # 这里原本是64
 
 # 神经网络希望输入的数值较小，最好在0-1之间，所以需要先将原始图像(0-255的灰度值)转化为图像张量（值为0-1）
 # 仅有灰度值->单通道   RGB -> 三通道 读入的图像张量一般为W*H*C (宽、高、通道数) 在pytorch中要转化为C*W*H
